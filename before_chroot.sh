@@ -13,7 +13,7 @@ tar xpvf stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
 mount /dev/nvme0n1p1 /mnt/gentoo/boot
 mount /dev/sda1 /mnt/gentoo/home
 sed s/"-O2 -pipe"/"-march=native -O2 -pipe"/ /mnt/gentoo/etc/portage/make.conf
-echo 'L10N = "ja,en"' >> /mnt/gentoo/etc/portage/make.conf
+echo 'L10N = "ja en"' >> /mnt/gentoo/etc/portage/make.conf
 echo 'GRUB_PLATFORMS="efi-64"' >> /mnt/gentoo/etc/portage/make.conf
 echo 'ACCEPT_LICENSE="*"' >> /mnt/gentoo/etc/portage/make.conf
 echo 'GENTOO_MIRRORS="http://ftp.jaist.ac.jp/pub/Linux/Gentoo/"' >> /mnt/gentoo/etc/portage/make.conf
